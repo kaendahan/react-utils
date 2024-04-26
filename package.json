@@ -1,0 +1,25 @@
+{
+  "name": "@kaendahan/react-utils",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "@kaendahan/react-utils"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaendahan/react-utils.git"
+  },
+  "keywords": [
+    "[\"react\"",
+    "\"react-dom\"",
+    "\"utils\"",
+    "\"utilities\"]"
+  ],
+  "author": "kaendahan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaendahan/react-utils/issues"
+  },
+  "homepage": "https://github.com/kaendahan/react-utils#readme"
+}
