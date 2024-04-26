@@ -1,25 +1,54 @@
 {
   "name": "@kaendahan/react-utils",
+  "private": false,
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "react utils for @kaendahan library",
+  "main": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "@kaendahan/react-utils"
+    "dev": "rollup -c --watch",
+    "prebuild": "rimraf dist",
+    "build": "npm run prebuild && rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kaendahan/react-utils.git"
   },
   "keywords": [
-    "[\"react\"",
-    "\"react-dom\"",
-    "\"utils\"",
-    "\"utilities\"]"
+    "react",
+    "react-dom",
+    "utils",
+    "utilities"
   ],
   "author": "kaendahan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kaendahan/react-utils/issues"
   },
-  "homepage": "https://github.com/kaendahan/react-utils#readme"
+  "homepage": "https://github.com/kaendahan/react-utils#readme",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "npm": ">=10.0.0",
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.16.4",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0"
+  }
 }
